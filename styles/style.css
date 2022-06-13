@@ -1,4 +1,16 @@
-/*---Reset styles-------------------*/
+/*?---Add fonts */
+@import url(https://fonts.googleapis.com/css?family=Poppins:regular,500,600&display=swap);
+
+@font-face {
+    font-family: CalSans;
+    src: url(/fonts/CalSans-SemiBold.woff2) format("woff2"),url(/fonts/CalSans-SemiBold.woff) format("woff"),
+    url(/fonts/CalSans-SemiBold.otf) format('otf'),
+    url(/fonts/CalSans-SemiBold.ttf) format('ttf');
+}
+
+/*?---end Add fonts*/
+
+/*?---Reset styles-------------------*/
 *{
 	padding: 0;
 	margin: 0;
@@ -15,8 +27,10 @@ a:focus,a:active{outline: none;}
 nav,footer,header,aside{display: block;}
 
 html,body{
+    font-family: 'Poppins';
+    color: #666666;
 	height: 100%;
-	width: 100%;
+	min-width: 320px;
 	font-size: 100%;
 	line-height: 1;
 	font-size: 14px;
@@ -35,5 +49,4 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
-/*----End reset styles---------*/
-
+/*?----End reset styles---------*/
