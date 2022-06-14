@@ -50,3 +50,22 @@ img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*?----End reset styles---------*/
+
+/*!-----Make grid---------*/
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.main {
+	flex: 1 1 auto;
+}
+
+/*!---End make grid---------*/
+
+
+[class*="__container"]{
+	max-width: 1200px;
+	margin: 0 auto;
+}
