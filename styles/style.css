@@ -71,3 +71,43 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	margin: 0 auto;
 	padding: 0px 15px;
 }
+
+a {
+	text-decoration: none;
+}
+
+.header {}
+
+.header__container {
+	display: flex;
+	gap: 131px;
+	align-items: center;
+	min-height: 152px;
+}
+
+.header__logo {}
+
+.header__menu {}
+
+.menu {}
+.menu__list {
+	display: flex;
+	gap: 56px;
+}
+
+.menu__item {}
+
+.menu__link {
+	color: #121212;
+	font-weight: 500;
+	font-size: 16px;
+	opacity: 40%;
+}
+
+.menu__link:hover {
+	text-decoration: underline;
+	opacity: 70%;
+}
+
+.main {}
+.footer {}
