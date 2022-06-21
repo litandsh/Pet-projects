@@ -98,10 +98,17 @@ a {
 
 .header__menu {}
 
-.menu {}
+.menu {
+	background-color: #ffffff;
+	padding: 5px 5px 5px 5px;
+	border-radius: 10px;
+}
+
 .menu__list {
 	display: flex;
-	gap: 56px;
+	column-gap: 56px;
+	row-gap: 10px;
+	flex-wrap: wrap;
 }
 
 .menu__item {}
@@ -137,6 +144,7 @@ a {
 .main__content {
 	flex: 0 1 50%;
 	align-self: flex-end;
+	padding-top: 120px;
 	padding-bottom: 60px;
 	padding-right: 20px;
 }
@@ -145,7 +153,7 @@ a {
 	font-family: 'CalSans';
 	color: #121212;
 	font-size: 56px;
-	line-height: 67px;
+	line-height:1.2;
 	font-weight: 600;
 }
 
@@ -177,12 +185,17 @@ a {
 }
 
 .actions-main__button {
+	text-align: center;
 	padding: 18.5px 48px;
 	background-color: #FF6428;
 	color: #ffffff;
 	border-radius: 40px;
 	font-weight: 600;
 	line-height: 28px;
+}
+
+.actions-main__button:hover {
+	background-color: #ff4800;
 }
 
 .actions-main__button:not(:last-child){
@@ -209,6 +222,10 @@ a {
 	margin-right: -135px;
 }
 
+.main__image img{
+	max-width: 672px;
+}
+
 .main__image::after{
 	content: "";
 	background: url('/img/main/decor.svg') 0 0 no-repeat;
@@ -220,4 +237,71 @@ a {
 	position: absolute;
 }
 
+@media (max-width: 1092px) {
+	.header__container {
+		gap: 50px;
+		min-height: 100px;
+	}
+	.menu__list {
+		column-gap: 40px;
+	}
+	.main__image img {
+		width: 100%;
+	}
+	.main__content {
+		flex: 0 0 60%;
+		padding-bottom: 0;		
+	}
+	.main__decor {
+		flex: 0 0 30%;
+	}
+}
+
+@media (max-width:768px) {
+	.header__container{
+		min-height: 60px;
+	}
+	.main__content{
+		flex: 1 1 100%;
+		padding-right: 0;
+		padding-top: 80px;
+	}
+	.main__decor{
+		display: none;
+	}
+	.main__title{
+		font-size: 44px;
+	}
+}
+
+@media (max-width:480px) {
+	.header__container{
+		gap: 15px;
+	}
+	.menu__list{
+		column-gap: 20px;
+	}
+	.header__logo{
+		width: 28px;
+		overflow: hidden;
+	}
+	.menu{
+		padding: 0;
+	}
+	.main__title{
+		font-size: 34px;		
+	}
+	.actions-main {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.actions-main__button {
+		flex: 1 1 100%;
+		font-size: 25px;		
+	}
+	.actions-main__button:not(:last-child){
+		margin-right: 0px;
+		margin-bottom: 15px;
+	}
+}
 /*!--End-Main style---------------*/
