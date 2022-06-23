@@ -86,6 +86,12 @@ a {
 	text-align: center;
 }
 
+@media (max-width: 768px) {
+	.title {
+		font-size: 38px;
+	}
+}
+
 .title span {
 	color: #FF6428;
 }
@@ -151,6 +157,18 @@ a {
 
 .main {
 	padding-bottom: 80px;
+}
+
+@media (max-width: 992px) {
+	.main{
+		padding-bottom: 40px;
+	}
+}
+
+@media (max-width: 768px) {
+	.main{
+		padding-bottom: 20px;
+	}
 }
 
 .main__container {
@@ -321,3 +339,122 @@ a {
 	}
 }
 /*!--End-Main style---------------*/
+
+/**--Store style-----------------*/
+
+.page__store {
+	padding-top: 80px;
+	padding-bottom: 90px;
+}
+
+.store {}
+.store__container {}
+
+.store__title {
+	margin-bottom: 86px;
+}
+
+.title {}
+.store__body {
+
+}
+
+.body-store {}
+
+.body-store:not(:last-child) {
+	margin-bottom: 96px;
+}
+
+.body-store__header {
+	margin-bottom: 32px;
+	display: flex;
+	justify-content: space-between;
+	gap: 15px;
+	align-items: center;
+}
+
+.body-store__title {
+	letter-spacing: 0.08em;
+	color: #121212;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.5;
+	text-transform: uppercase;
+}
+
+.body-store__all {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	color: #868686;
+	line-height: 1.5;
+}
+
+.body-store__items {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 54px;
+}
+
+.body-store__item {
+	
+}
+
+.item {
+	display: grid;
+}
+
+.item__image {
+	text-align: center;
+}
+
+.item__image img {
+	max-width: 100%;
+}
+
+.item__image:not(:last-child) {
+	margin-bottom: 40px;
+}
+
+.item__title {
+	font-family: Poppins;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.5;
+	letter-spacing: 0em;
+	justify-self: start;
+	color: #121212;
+}
+
+.item__title:hover {
+	text-decoration: underline;
+}
+
+.item__title:not(:last-child) {
+	margin-bottom: 7px;
+}
+
+.item__price {
+	font-size: 14px;
+}
+
+@media (max-width: 992px) {
+	.store {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.body-store__items {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 560px) {
+	.body-store__items {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.item__image:not(:last-child) {
+		margin-bottom: -10px;
+	}
+}
+/**----End Store style-----------------*/
