@@ -535,4 +535,29 @@ a {
 	object-fit: cover;
 }
 
+@media (max-width: 1230px){
+	.categories__items {
+		column-gap: 40px;
+		
+	}
+}
+@media (max-width: 992px){
+	.categories__title {
+		margin-bottom: 50px;
+	}
+	.categories__items {
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 40px;
+	}
+}
+
+@media (max-width: 480px){
+	.categories__items {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.categories {
+		padding-top: 30px;
+	}
+}
+
 /*!---End style Categories-----------*/
