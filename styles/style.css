@@ -562,7 +562,7 @@ a {
 
 /*!---End style Categories-----------*/
 
-//**---Style brands----------------*/
+/**---Style brands----------------*/
 
 .page__brands {}
 .brands {
@@ -618,7 +618,7 @@ a {
 		row-gap: 40px;
 	}
 }
-//**---End Style brands----------------*/
+/**---End Style brands----------------*/
 
 /*?---Styles Why----------------------*/
 
@@ -711,3 +711,63 @@ a {
 }
 
 /*?---End Styles Why----------------------*/
+
+/*!---Reviews style-------------------*/
+
+.page__reviews {
+	margin-bottom: 240px;
+	margin-top: 240px;
+}
+.reviews {}
+
+.reviews__container {}
+
+.reviews-title {
+	margin-bottom: 109px;
+}
+
+.title {}
+
+.review__content {
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	column-gap: 146px;
+	justify-content: center;
+	align-items: center;
+}
+
+.reviews__foto {}
+
+.reviews__foto img {
+	/* max-width: 100%; */
+}
+
+.reviews__body {}
+
+.reviews__body-text {
+	font-family: 'Poppins';
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 1.6;
+	color: #666666;
+	max-width: 524px;
+}
+
+.reviews__body-name {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.6;
+	color: #000;
+	margin-top: 56px;
+}
+
+.reviews__body-positiion {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1.6;
+	letter-spacing: 0.08em;
+	color:#868686;
+	padding-top: 8px;
+}
+
+/*!--End Reviews style-------------------*/
