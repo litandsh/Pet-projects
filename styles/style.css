@@ -858,4 +858,17 @@ a {
 	max-width: 100%;
 }
 
+@media (max-width: 992px) {
+	.favorite__container {
+		flex-direction: column;
+	}
+	.favorite__title {
+		font-size: 38px;
+		text-align: center;
+	}
+	.favorite__apps {
+		justify-content: center;
+	}
+}
+
 /**--End Favorite Style----------------*/
