@@ -811,3 +811,51 @@ a {
 }
 
 /*!--End Reviews style-------------------*/
+
+/**--Favorite style------------------*/
+
+.page__favorite {}
+.favorite {
+	padding-bottom: 120px;
+}
+.favorite__container {
+	display: flex;
+	align-items: center;
+}
+.favorite__body {
+	flex: 0 1 50%;
+}
+
+.favorite__title {
+	text-align: left;
+	font-size: 48px;
+}
+
+.favorite__title:not(:last-child) {
+	margin-bottom: 60px;
+}
+
+.favorite__apps {}
+
+
+
+.apps-favorite {
+	display: flex;
+	column-gap: 25px;
+}
+
+.apps-favorite__item {}
+.apps-favorite__item img {
+	max-width: 100%;
+}
+
+.favorite__images {
+	flex: 0 1 50%;
+	text-align: 100%;
+}
+
+.favorite__images img {
+	max-width: 100%;
+}
+
+/**--End Favorite Style----------------*/
