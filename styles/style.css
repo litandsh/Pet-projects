@@ -952,4 +952,16 @@ a {
 	font-weight: 400;
 }
 
+@media (max-width: 710px) {
+	.footer__columns {
+		flex-direction: column;
+		text-align: center;
+	}
+	.followus__list {
+		justify-content: center;
+	}
+	.footer-title {
+		margin-top: 60px;
+	}
+}
 /*!--End footer styles------------------*/
